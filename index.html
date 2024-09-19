@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Ledesma José Luis">
+    <meta name="author" content="Ledesma José Luis">
+    <title>Ledesma José Luis - Portafolio Personal</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #F2F2F2;
+            color: #0D0D0D;
+        }
+        .navbar {
+            background-color: #1e3143;
+        }
+        .navbar-brand, .nav-link {
+            color: #F2F2F2 !important;
+        }
+        .masthead {
+            height: 100vh;
+            min-height: 500px;
+            background-color: #001933;
+            color: #D9D6D2;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .masthead h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .masthead h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            color: #D9D6D2;
+            margin-bottom: 1.5rem;
+        }
+        .about-section {
+            padding: 100px 0;
+            background-color: #001933;
+            color: #D9D6D2;
+        }
+        .projects-section, .contact-section {
+            padding: 80px 0; /* Reduced space between sections */
+            background-color: #001933;
+            color: #D9D6D2;
+            position: relative;
+        }
+        .project-card {
+            background-color: #1e3143;
+            color: #D9D6D2;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+ 	    text-align: center;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .about-img {
+            width: 80%;
+            height: 80;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .project-card h4 a {
+            color: #D9D6D2; /* Color updated to match the navigation bar */
+            text-decoration: none;
+        }
+        .project-card h4 a:hover {
+            text-decoration: underline;
+        }
+        .contact-card {
+            background-color: #1e3143;
+            color: #D9D6D2;
+            padding: 20px;
+            border-radius: 8px;
+ 	    transition: transform 0.3s;
+            text-align: center;
+        }
+        .contact-card:hover {
+            transform: scale(1.05);
+        }
+        .contact-card a {
+            color: #D9D6D2;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #0D0D0D;
+            color: #D9D6D2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Particles.js container styling */
+        #particles-js, #particles-projects, #particles-contact, #particles-about {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .section-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h1>Ledesma José Luis</h1>
+            <h2>Soy estudiante de Licenciatura en Ciencia de Datos</h2>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div id="particles-about"></div> 
+       <div class="container section-content">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="image-box">
+                    <img src="https://raw.githubusercontent.com/joseledes/Foto/452f1bc9b5ff9977a21dc580fdb825a6dcfb8f2c/IMG-20240908-WA0006.jpg" alt="Foto de Ledesma José Luis" class="about-img">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="text-box">
+                    <h2 class="section-heading">Sobre mí</h2>
+                    <p>Tengo más de 6 años de experiencia en el área de logística y actualmente estoy incursionando en el mundo del análisis de datos, un campo que me apasiona.</p>
+                    <p>Estoy cursando la Licenciatura en Ciencia de Datos en la Universidad Siglo 21, y he complementado mi formación con cursos de Data Analysis, Data Science y SQL. Mi interés es profundizar en este ámbito para ganar experiencia y aplicar mis conocimientos a problemas reales.</p> 
+                    <p>Además, he trabajado como tutor de Tableau en Coderhouse, lo que me permitió fortalecer mis habilidades en esta herramienta. También tengo conocimientos en Power BI, SQL y Python, y avanzados en Excel.</p>       
+                </div>
+             </div>
+         </div>
+       </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div id="particles-projects"></div>
+        <div class="section-content">
+            <div class="container">
+                <h2 class="section-heading text-center">Proyectos</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="project-card">
+                            <h4><a href="https://github.com/joseledes/Hotel-reservation-cancellation-project" target="_blank">Reservations Cancelled</a></h4>
+                            <p>El proyecto analiza un dataset de reservas hoteleras para identificar y reducir cancelaciones, utilizando datos de Kaggle. Busca proponer estrategias que minimicen pérdidas y aseguren ingresos en base a patrones de cancelación.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="project-card">
+                            <h4><a href="https://github.com/joseledes/Credit-Card-Fraud/blob/main/Credit%20card%20fraud.ipynb" target="_blank">Credit Card Fraud</a></h4>
+                            <p>El proyecto desarrolla un modelo de machine learning para detectar fraudes en transacciones con tarjetas de crédito, utilizando más de 1 millón de registros. El objetivo es clasificar transacciones como fraudulentas o legítimas, aplicando técnicas de limpieza de datos y visualización para optimizar el modelo y minimizar falsos positivos.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="project-card">
+                            <h4><a href="https://github.com/joseledes/DB-Contoso" target="_blank">Contoso Sales</a></h4>
+                            <p>El proyecto de base de datos para Contoso Supermarkets tiene como objetivo principal proporcionar una solución tecnológica que no solo garantice el almacenamiento seguro de datos, sino que también potencie la toma de decisiones estratégicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div id="particles-contact"></div>
+        <div class="section-content">
+            <div class="container">
+                <h2 class="section-heading text-center">Contacto</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                            <h4 class="text-uppercase m-0">LinkedIn</h4>
+                            <hr class="my-4">
+                            <a href="https://www.linkedin.com/in/joseluisledesma/" target="_blank">Visítame en LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fab fa-github fa-2x"></i>
+                            <h4 class="text-uppercase m-0">GitHub</h4>
+                            <hr class="my-4">
+                            <a href="https://github.com/joseledes" target="_blank">Visítame en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <a href="mailto:ledesma.jose1@gmail.com">Envíame un correo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Ledesma José Luis - Portafolio Personal</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 50,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#FF0044', '#FF6600', '#FFDD00', '#33FF33', '#3399FF', '#CC00FF']
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        particlesJS('particles-about', {
+    particles: {
+        number: {
+            value: 50,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+        color: {
+            value: ['#FF0044', '#FF6600', '#FFDD00', '#33FF33', '#3399FF', '#CC00FF']
+        },
+        shape: {
+            type: 'circle',
+            stroke: {
+                width: 0,
+                color: '#000000'
+            },
+            polygon: {
+                nb_sides: 5
+            },
+            image: {
+                src: 'img/github.svg',
+                width: 100,
+                height: 100
+            }
+        },
+        opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+            }
+        },
+        size: {
+            value: 3,
+            random: true,
+            anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+            }
+        },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 2,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+            }
+        }
+    },
+    interactivity: {
+        detect_on: 'canvas',
+        events: {
+            onhover: {
+                enable: true,
+                mode: 'grab'
+            },
+            onclick: {
+                enable: true,
+                mode: 'push'
+            },
+            resize: true
+        },
+        modes: {
+            grab: {
+                distance: 140,
+                line_linked: {
+                    opacity: 1
+                }
+            },
+            bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3
+            },
+            repulse: {
+                distance: 200,
+                duration: 0.4
+            },
+            push: {
+                particles_nb: 4
+            },
+            remove: {
+                particles_nb: 2
+            }
+        }
+    },
+    retina_detect: true
+});
+
+        particlesJS('particles-projects', {
+            particles: {
+                number: {
+                    value: 50,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#FF0044', '#FF6600', '#FFDD00', '#33FF33', '#3399FF', '#CC00FF']
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        particlesJS('particles-contact', {
+            particles: {
+                number: {
+                    value: 50,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#FF0044', '#FF6600', '#FFDD00', '#33FF33', '#3399FF', '#CC00FF']
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
